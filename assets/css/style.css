@@ -1527,3 +1527,91 @@ h2.display-4 {
 .modal {
   z-index: 1050;
 }
+
+.shortcut {
+  position: fixed;
+  right: -160px;
+  top: 40%;
+  z-index: 20;
+  max-width: max-content;
+}
+
+.link-shortcut {
+  background-color: #06047f;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.network {
+  position: relative;
+  right: 0;
+  border-radius: 10px 0 0 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.contact {
+  position: relative;
+  right: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.faq {
+  position: relative;
+  right: 0;
+  transition: all ease-in-out 0.3s;
+  border-radius: 0 0 0 10px;
+}
+
+.network:hover {
+  right: 150px;
+  border-radius: 10px 0 0 10px;
+}
+
+.contact:hover {
+  right: 150px;
+  border-radius: 10px 0 0 10px;
+}
+
+.faq:hover {
+  right: 150px;
+  border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 768px) {
+  .shortcut {
+    top: 30%;
+    transform: translateY(-50%);
+    right: -130px; /* Sesuaikan dengan hover right */
+  }
+
+  .link-shortcut {
+    padding: 12px 14px;
+    font-size: 16px;
+    gap: 12px;
+  }
+
+  .link-shortcut i {
+    font-size: 18px;
+  }
+
+  .link-shortcut:hover {
+    right: 120px;
+  }
+
+  .network:hover,
+  .contact:hover,
+  .faq:hover {
+    right: 120px;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+
