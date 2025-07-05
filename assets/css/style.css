@@ -1587,7 +1587,7 @@ h2.display-4 {
 
 @media (max-width: 768px) {
   .shortcut {
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
     right: -130px; /* Sesuaikan dengan hover right */
   }
