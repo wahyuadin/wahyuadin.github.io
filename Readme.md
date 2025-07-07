@@ -1,19 +1,12 @@
-# Nova Free Bootstrap 5 Business Template 
+# Website Nayaka Era Husada New Desain 
 
 #### Preview
 
- - [Demo](https://themewagon.github.io/Nova-Bootstrap-5/)
+ - [Demo](https://wahyuadin.github.io)
 
 #### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/nova-bootstrap/)
+ - [Download from GitHub](https://github.com/wahyuadin/wahyuadin.github.io/)
 
-## Getting Started
-
-Clone from Github
-
-```
-git clone https://github.com/themewagon/Nova-Bootstrap-5.git
-```
 ## Author
 
 Design and code is completely written by Freebiesbug's design and development team.  
