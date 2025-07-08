@@ -1549,7 +1549,6 @@ h2.display-4 {
   font-size: 18px;
 }
 
-
 .network {
   position: relative;
   right: 0;
@@ -1614,4 +1613,224 @@ h2.display-4 {
   }
 }
 
+.logo-marquee-horizontal {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
 
+/* // */
+/* Bagian pertama: marquee dari kanan ke kiri */
+/* COMMON STYLES UNTUK SEMUA MARQUEE */
+.logo-marquee-horizontal,
+.logo-marquee-horizontal-kiri {
+  overflow: hidden;
+  width: 100%;
+  position: relative; /* supaya pseudo-element gradient bisa muncul */
+}
+
+.logo-track-horizontal,
+.logo-track-horizontal-kiri {
+  display: flex;
+  width: max-content;
+}
+
+.logo-group-horizontal,
+.logo-group-horizontal-kiri {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.logo-group-horizontal img,
+.logo-group-horizontal-kiri img {
+  height: 65px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.logo-group-horizontal img:hover,
+.logo-group-horizontal-kiri img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* MARQUEE KE KIRI */
+.logo-track-horizontal {
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+.logo-marquee-horizontal:hover .logo-track-horizontal {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* MARQUEE KE KANAN */
+.logo-track-horizontal-kiri {
+  animation: scroll-horizontal-kiri 30s linear infinite;
+}
+
+.logo-marquee-horizontal-kiri:hover .logo-track-horizontal-kiri {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-horizontal-kiri {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* FADE IN BLUR DI SAMPING UNTUK PROVIDER KAMI */
+.logo-marquee-horizontal-kiri::before,
+.logo-marquee-horizontal-kiri::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px; /* atur lebar fade */
+  height: 100%;
+  z-index: 2;
+}
+
+.logo-marquee-horizontal-kiri::before {
+  left: 0;
+  background: linear-gradient(to right, #f7faff 0%, transparent 100%);
+}
+
+.logo-marquee-horizontal-kiri::after {
+  right: 0;
+  background: linear-gradient(to left, #f7faff 0%, transparent 100%);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .logo-group-horizontal img,
+  .logo-group-horizontal-kiri img {
+    height: 45px;
+  }
+
+  .logo-group-horizontal,
+  .logo-group-horizontal-kiri {
+    gap: 20px;
+  }
+}
+
+/* MARQUEE KE KIRI */
+.logo-track-horizontal {
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+.logo-marquee-horizontal:hover .logo-track-horizontal {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* MARQUEE KE KANAN */
+.logo-track-horizontal-kiri {
+  animation: scroll-horizontal-kiri 30s linear infinite;
+}
+
+.logo-marquee-horizontal-kiri:hover .logo-track-horizontal-kiri {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-horizontal-kiri {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* RESPONSIVE: LOGO KECIL DI MOBILE */
+@media (max-width: 768px) {
+  .logo-group-horizontal img,
+  .logo-group-horizontal-kiri img {
+    height: 45px;
+  }
+
+  .logo-group-horizontal,
+  .logo-group-horizontal-kiri {
+    gap: 20px;
+  }
+}
+
+/* Tambah spasi ekstra di antara dua grup supaya tidak nabrak */
+.logo-group-horizontal:last-child img:first-child,
+.logo-group-horizontal-kiri:last-child img:first-child {
+  margin-left: 40px; /* atur sesuai kebutuhan, misalnya sama seperti gap */
+}
+
+.logo-group-horizontal:first-child img:last-child,
+.logo-group-horizontal-kiri:first-child img:last-child {
+  margin-right: 40px; /* atur sesuai kebutuhan */
+}
+
+@font-face {
+  font-family: "brush";
+  src: url("../font/BRUSHSCI.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 767.98px) {
+  .card-row .col-3 p {
+    font-size: 40px !important;
+  }
+
+  .card-row .col-9 p,
+  .card-row .col-9 ul {
+    font-size: 14px;
+  }
+}
+.li-custom li {
+  position: relative;
+  list-style: none; /* hilangkan bullet bawaan */
+  padding-left: 1.5em; /* tambahkan ruang di kiri untuk icon */
+}
+
+.li-custom li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 0; /* optional: supaya icon sejajar vertikal */
+}
+
+.li-custom ul {
+  margin: 0; /* reset margin kalau perlu */
+  padding-left: 0; /* hilangkan padding di UL, padding pindah ke LI */
+}
