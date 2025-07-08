@@ -259,7 +259,7 @@
 
       <!-- ======= Main =======-->
       <main>
-        <div class="section" id="home">
+        <div id="home">
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade custom-carousel hero-subtitle text-uppercase"
@@ -327,39 +327,43 @@
         <!-- End Hero-->
 
         <!-- ======= About =======-->
-        <section class="about__v4 section-padding-top" id="about">
+        <section class="about__v4 section" id="about">
           <div class="container">
-            <div class="row" data-aos="fade-up" data-aos-delay="200">
-              <p class="fw-semibold text-center">Lead Management</p>
+            <div class="row">
               <div
-                class="d-flex flex-wrap justify-content-center align-items-center gap-4"
                 style="margin-bottom: 100px"
+                data-aos="fade-up"
+                data-aos-delay="200"
               >
-                <img
-                  src="assets/kerjasama/bpjstk.png"
-                  height="50"
-                  alt="BPJSTK"
-                />
-                <img
-                  src="assets/kerjasama/dpk logo ok.png"
-                  height="50"
-                  alt="DPK"
-                />
-              </div>
-              <div class="col-md-6 order-1 order-md-2">
-                <div class="img-wrap position-relative">
+                <p
+                  class="fw-semibold text-center"
+                  style="
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                      'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                  "
+                >
+                  Lead Management
+                </p>
+                <div
+                  class="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-3"
+                >
                   <img
-                    class="img-fluid rounded-4"
-                    src="assets/tentang_nakaya.png"
-                    alt=""
-                    data-aos="fade-up"
-                    data-aos-delay="300"
+                    src="assets/kerjasama/bpjstk.png"
+                    height="50"
+                    alt="BPJSTK"
+                  />
+                  <img
+                    src="assets/kerjasama/dpk logo ok.png"
+                    height="50"
+                    alt="DPK"
+                    class="mt-1"
                   />
                 </div>
               </div>
-              <div class="col-md-6 order-2 order-md-1">
+
+              <div class="col-md-6 order-md-2">
                 <div class="row justify-content-end">
-                  <div class="col-md-11 mb-4 mt-4 mb-md-0">
+                  <div class="col-md-11 mb-4 mb-md-0">
                     <span
                       class="subtitle text-uppercase mb-3"
                       data-aos="fade-up"
@@ -389,6 +393,24 @@
                       </button>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-wrap position-relative">
+                  <img
+                    class="img-fluid rounded-4"
+                    src="assets/tentang_nakaya.png"
+                    alt=""
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  />
+                  <!-- <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mission-icon text-center rounded-circle"><i class="bi bi-lightbulb fs-4"></i></div>
+                    <div>
+                      <h3 class="text-uppercase fw-bold">We’re listed on</h3>
+                      <p class="fs-5 mb-0">Our mission is to empower individuals and businesses by delivering secure, efficient, and user-friendly financial services.</p>
+                    </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -522,13 +544,9 @@
                     </div>
                   </div>
                 </div>
-                <a
-                  href="https://new.nayakaerahusada.com/layanan/provider"
-                  target="_blank"
-                  class="btn btn-primary rounded-border-3 btn-sm mt-5"
-                >
+                <button class="btn btn-primary rounded-border-3 btn-sm mt-5">
                   <i class="fa-regular fa-eye"></i> Daftar Provider
-                </a>
+                </button>
               </div>
             </section>
 
@@ -558,7 +576,7 @@
                 >
                   <div class="row">
                     <div
-                      class="col-lg-5 mb-lg-0 order-2"
+                      class="col-lg-5 mb-lg-0"
                       data-aos="fade-up"
                       data-aos-delay="0"
                     >
@@ -625,7 +643,6 @@
                               src="assets/why.png"
                               width="500%"
                               style="border-radius: 5%"
-                              class="img-fluid mb-4"
                             />
                           </div>
                         </div>
@@ -640,7 +657,7 @@
         <!-- End Features-->
 
         <!-- ======= Pricing =======-->
-        <section class="section-lead-management pricing__v2" id="pricing">
+        <section class="section pricing__v2" id="pricing">
           <div class="container">
             <div class="row mb-5">
               <div class="col-md-8 mx-auto text-center">
@@ -654,7 +671,8 @@
                   <b>Produk</b>
                 </h2>
                 <p data-aos="fade-up" data-aos-delay="200">
-                  Klinik | Managed Care | TPA/ASO | Medical Check Up
+                  Rangkaian layanan klinik hingga asuransi kesehatan oleh PT
+                  Nayaka Era Husada.
                 </p>
               </div>
             </div>
@@ -979,7 +997,7 @@
           class="section services__v3 bg-light py-5"
           id="services"
           data-aos="fade-right"
-          data-aos-delay="1100"
+          data-aos-delay="300"
         >
           <div class="container">
             <div class="row mb-5">
@@ -1367,14 +1385,9 @@
                   data-aos-delay="0"
                   >Testimonials</span
                 > -->
-                <h2
-                  class="h2 fw-bold mb-3"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">
                   Testimoni
                 </h2>
-
                 <!-- <a href="" data-aos="fade-up" data-aos-delay="200">
                   -> Apa kata mereka tentang PT Nayaka Era Husada
                 </a> -->
@@ -1700,7 +1713,7 @@
         <!-- End FAQ-->
 
         <!-- ======= Contact =======-->
-        <section class="section-lead-management contact__v2" id="contact">
+        <section class="section contact__v2" id="contact">
           <div class="container">
             <div class="row mb-5">
               <div class="col-md-6 col-lg-7 mx-auto text-center">
@@ -1900,7 +1913,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md-5 col-lg-4 mb-4 mb-lg-0">
+                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <h3 class="mb-3">Layanan Kami</h3>
                     <ul class="list-unstyled">
                       <li>
@@ -1926,7 +1939,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md-7 col-lg-4 mb-4 mb-lg-0 quick-contact">
+                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
                     <h3 class="mb-3">Kontak</h3>
                     <p class="d-flex mb-3">
                       <i
@@ -1955,7 +1968,7 @@
                       ><span>+62 215-260-518</span></a
                     ><a class="d-flex mb-3"
                       ><i class="bi bi-clock me-3" style="color: white"></i
-                      ><span>Mon-Fri: 08.00 am - 0.00 pm</span></a
+                      ><span>Mon-Fri: 09.00 am - 05.00 pm</span></a
                     >
                   </div>
                 </div>
@@ -2800,6 +2813,7 @@
       </div>
     </div>
     <!-- end modal -->
+
     <!-- ======= Back to Top =======-->
     <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
     <!-- End Back to top-->

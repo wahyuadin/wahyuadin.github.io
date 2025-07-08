@@ -74,9 +74,19 @@ h6 {
 }
 
 .section {
+  padding-top: 70px;
+  scroll-margin-top: 60px;
+}
+
+.section-lead-management {
   padding: 70px 0;
   scroll-margin-top: 60px;
 }
+.section-padding-top {
+  padding-bottom: 70px;
+  scroll-margin-top: 60px;
+}
+
 @media (max-width: 767.98px) {
   .section {
     padding: 40px 0;
@@ -1863,6 +1873,24 @@ h2.display-4 {
 }
 
 .icon-circle:hover {
+  transform: scale(1.1); /* zoom saat hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* shadow saat hover */
+}
+
+.icon-circle-budaya {
+  display: inline-flex; /* supaya konten di tengah */
+  align-items: center;
+  justify-content: center;
+  background-color: #a1d1a4; /* warna background, ganti sesuai selera */
+  color: white; /* warna icon */
+  border-radius: 50%; /* bikin lingkaran */
+  width: 60px; /* ukuran lingkaran */
+  height: 60px;
+  font-size: 24px; /* ukuran icon */
+  transition: transform 0.3s, box-shadow 0.3s; /* animasi hover */
+}
+
+.icon-circle-budaya:hover {
   transform: scale(1.1); /* zoom saat hover */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* shadow saat hover */
 }
