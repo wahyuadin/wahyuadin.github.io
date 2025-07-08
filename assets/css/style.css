@@ -1834,3 +1834,35 @@ h2.display-4 {
   margin: 0; /* reset margin kalau perlu */
   padding-left: 0; /* hilangkan padding di UL, padding pindah ke LI */
 }
+
+.custom-card {
+  border: 1px solid #ccc; /* warna abu-abu */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer; /* biar terasa bisa diklik */
+}
+
+.custom-card:hover,
+.custom-card:active {
+  transform: scale(1.03); /* zoom dikit */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* shadow lebih besar */
+}
+
+.icon-circle {
+  display: inline-flex; /* supaya konten di tengah */
+  align-items: center;
+  justify-content: center;
+  background-color: #f0ad4e; /* warna background, ganti sesuai selera */
+  color: white; /* warna icon */
+  border-radius: 50%; /* bikin lingkaran */
+  width: 60px; /* ukuran lingkaran */
+  height: 60px;
+  font-size: 24px; /* ukuran icon */
+  transition: transform 0.3s, box-shadow 0.3s; /* animasi hover */
+}
+
+.icon-circle:hover {
+  transform: scale(1.1); /* zoom saat hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* shadow saat hover */
+}
