@@ -1998,3 +1998,49 @@ h2.display-4 {
   transform: translateY(-5px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
+
+.team-member-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-member-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #007bff; /* Example border color */
+}
+.team-member-card h4 {
+  color: #333;
+  margin-bottom: 5px;
+}
+.team-member-card p.title {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.team-member-card p.description {
+  color: #555;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+.page-title {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  margin-bottom: 40px;
+}
+.page-title h1 {
+  font-size: 2.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+.page-title p {
+  font-size: 1.1em;
+  color: #666;
+}
