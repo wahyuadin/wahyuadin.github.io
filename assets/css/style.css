@@ -84,6 +84,10 @@ h6 {
   max-width: 1140px;
 }
 
+.navbar-fix {
+  max-width: 1140px;
+}
+
 .section {
   padding-top: 70px;
   scroll-margin-top: 60px;

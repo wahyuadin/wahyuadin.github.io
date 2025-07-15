@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Galeri Video - Edukasi & Kegiatan | Nayaka Era Husada</title>
+    <meta
+      name="description"
+      content="Kumpulan video edukasi, tips kesehatan, dan liputan kegiatan dari PT Nayaka Era Husada. Tonton informasi kesehatan terpercaya langsung dari ahlinya."
+    />
+    <meta
+      name="keywords"
+      content="Nayaka Era Husada, video kesehatan, youtube nayaka, edukasi medis, tips sehat, kesehatan kerja, liputan kegiatan"
+    />
+    <meta name="author" content="PT Nayaka Era Husada" />
+    <link rel="canonical" href="https://www.nayakaerahusada.com/video.html" />
+
+    <meta
+      property="og:title"
+      content="Galeri Video - Edukasi & Kegiatan | Nayaka Era Husada"
+    />
+    <meta
+      property="og:description"
+      content="Kumpulan video edukasi, tips kesehatan, dan liputan kegiatan dari PT Nayaka Era Husada."
+    />
+    <meta
+      property="og:image"
+      content="https://new.nayakaerahusada.com/assets/images/logo_nayaka2.png"
+    />
+    <meta
+      property="og:url"
+      content="https://www.nayakaerahusada.com/video.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Galeri Video - Edukasi & Kegiatan | Nayaka Era Husada"
+    />
+    <meta
+      name="twitter:description"
+      content="Kumpulan video edukasi, tips kesehatan, dan liputan kegiatan dari PT Nayaka Era Husada."
+    />
+    <meta
+      name="twitter:image"
+      content="https://new.nayakaerahusada.com/assets/images/logo_nayaka2.png"
+    />
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendors/aos/aos.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+      .blog .entry {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .blog .entry:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      /* === UX Improvement for Video === */
+      .blog .entry .entry-img {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .play-icon-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(
+          1,
+          114,
+          182,
+          0.5
+        ); /* Warna overlay disesuaikan dengan brand */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .entry-img:hover .play-icon-overlay {
+        opacity: 1;
+      }
+
+      .play-icon-overlay i {
+        font-size: 64px;
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      }
+      /* === End UX Improvement === */
+
+      .blog .entry .entry-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .blog .entry .entry-title a {
+        color: #333;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .blog .entry .entry-title a:hover {
+        color: #0172b6;
+      }
+
+      .blog .entry .entry-meta {
+        margin-bottom: 1rem;
+        color: #6c757d;
+        font-size: 0.9rem;
+      }
+
+      .blog .entry .entry-meta ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .blog .entry .entry-meta i {
+        color: #0172b6;
+      }
+
+      .blog .entry .entry-meta a {
+        color: #6c757d;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .blog .entry .entry-meta a:hover {
+        color: #0172b6;
+      }
+
+      .blog .sidebar-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .blog .sidebar .categories ul a,
+      .blog .sidebar .recent-posts h4 a {
+        color: #333;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .blog .sidebar .categories ul a:hover,
+      .blog .sidebar .recent-posts h4 a:hover {
+        color: #0172b6;
+      }
+
+      .blog .sidebar .recent-posts .post-item h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .blog .sidebar .recent-posts .post-item time {
+        font-size: 0.8rem;
+        color: #6c757d;
+      }
+
+      .blog-pagination {
+        margin-top: 30px;
+      }
+
+      .blog-pagination ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: center;
+      }
+
+      .blog-pagination li {
+        margin: 0 5px;
+      }
+
+      .blog-pagination li a {
+        color: #333;
+        padding: 8px 16px;
+        border: 1px solid #ddd;
+        transition: 0.3s;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .blog-pagination li.active a,
+      .blog-pagination li a:hover {
+        background: #0172b6;
+        color: #fff;
+        border-color: #0172b6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="site-wrap">
+      <header
+        class="fbs__net-navbar navbar navbar-expand-lg dark"
+        aria-label="freebootstrap.net navbar"
+      >
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <a class="navbar-brand w-auto" href="index.html">
+            <img
+              class="logo dark img-fluid"
+              src="assets/icon.png"
+              alt="Logo Nayaka Era Husada"
+              width="160"
+            />
+            <img
+              class="logo light img-fluid"
+              src="assets/icon.png"
+              alt="Logo Nayaka Era Husada"
+            />
+          </a>
+          <div
+            class="offcanvas offcanvas-start w-75"
+            id="fbs__net-navbars"
+            tabindex="-1"
+            aria-labelledby="fbs__net-navbarsLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="offcanvas-header-logo">
+                <a
+                  class="logo-link"
+                  id="fbs__net-navbarsLabel"
+                  href="index.html"
+                >
+                  <img
+                    class="logo dark img-fluid"
+                    src="assets/icon.png"
+                    width="150"
+                    alt="Logo Nayaka Era Husada" />
+                  <img
+                    class="logo light img-fluid"
+                    src="assets/icon.png"
+                    alt="Logo Nayaka Era Husada"
+                /></a>
+              </div>
+              <button
+                class="btn-close btn-close-black"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body align-items-lg-center">
+              <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link scroll-link"
+                    aria-current="page"
+                    href="index.html#home"
+                    ><b>Home</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll-link" href="index.html#about"
+                    ><b>Tentang</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll-link" href="index.html#pricing"
+                    ><b>Produk</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll-link" href="index.html#services"
+                    ><b>Kegiatan</b></a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><b>Layanan Nayaka</b> <i class="bi bi-chevron-down"></i
+                  ></a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="nav-link scroll-link dropdown-item"
+                        href="https://nayakaerahusada.com/layanan/klinik"
+                        >Klinik Nayaka</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link scroll-link dropdown-item"
+                        href="https://nayakaerahusada.com/layanan/provider"
+                        >Provider Nayaka</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link scroll-link dropdown-item"
+                        href="https://nayakaerahusada.com/layanan/inhouse"
+                        >Kerjasama Perusahaan</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link scroll-link dropdown-item"
+                        href="https://nayakaerahusada.com/layanan/download_formulir"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >Download Formulir</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link scroll-link" href="index.html#faqu"
+                        >FAQ</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link scroll-link"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><b>Tentang Nayaka</b> <i class="bi bi-chevron-down"></i
+                  ></a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="nav-link scroll-link dropdown-item"
+                        href="index.html#about"
+                        >Tentang Kami</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link scroll-link dropdown-item"
+                        href="management.html"
+                        >Tim Management</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link scroll-link"
+                    href="https://new.nayakaerahusada.com/kontak"
+                    ><b>Kontak Nayaka</b></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ms-auto w-auto">
+            <div class="header-social d-flex align-items-center gap-1">
+              <button
+                class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#fbs__net-navbars"
+                aria-controls="fbs__net-navbars"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+              >
+                <svg
+                  class="fbs__net-icon-menu"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="21" x2="3" y1="6" y2="6"></line>
+                  <line x1="15" x2="3" y1="12" y2="12"></line>
+                  <line x1="17" x2="3" y1="18" y2="18"></line>
+                </svg>
+                <svg
+                  class="fbs__net-icon-close"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="page-title" data-aos="fade-up" data-aos-delay="100">
+          <div class="container">
+            <h1 class="mb-2">GALERI VIDEO</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item">
+                  <a href="index.html"><i class="bi bi-house"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Galeri Video
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        <section id="blog" class="blog py-5">
+          <div class="container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row g-5">
+              <div class="col-lg-8">
+                <div class="row gy-5">
+                  <div class="col-md-12">
+                    <article class="entry">
+                      <div class="entry-img">
+                        <a
+                          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                          class="glightbox"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+                            alt="Video tentang Pentingnya Vaksinasi"
+                            class="img-fluid"
+                          />
+                          <div class="play-icon-overlay">
+                            <i class="bi bi-play-circle-fill"></i>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="p-4">
+                        <h2 class="entry-title">
+                          Pentingnya Vaksinasi untuk Mencegah Penyakit Menular
+                        </h2>
+                        <div class="entry-meta">
+                          <ul>
+                            <li class="d-inline-flex align-items-center me-3">
+                              <i class="bi bi-person-circle me-1"></i> Tim
+                              Nayaka
+                            </li>
+                            <li class="d-inline-flex align-items-center me-3">
+                              <i class="bi bi-clock me-1"></i>
+                              <time datetime="2025-07-14">14 Juli 2025</time>
+                            </li>
+                            <li class="d-inline-flex align-items-center">
+                              <i class="bi bi-camera-reels me-1"></i> Edukasi
+                              Kesehatan
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="entry-content">
+                          <p>
+                            Video ini menjelaskan secara ringkas dan jelas
+                            mengapa vaksinasi sangat penting bagi individu dan
+                            masyarakat untuk membangun kekebalan kelompok dan
+                            melindungi dari berbagai penyakit berbahaya.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="col-md-12">
+                    <article class="entry">
+                      <div class="entry-img">
+                        <a
+                          href="https://www.youtube.com/watch?v=3hAmA31pZDA"
+                          class="glightbox"
+                        >
+                          <img
+                            src="https://img.youtube.com/vi/3hAmA31pZDA/hqdefault.jpg"
+                            alt="Video tentang Senam Sehat di Kantor"
+                            class="img-fluid"
+                          />
+                          <div class="play-icon-overlay">
+                            <i class="bi bi-play-circle-fill"></i>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="p-4">
+                        <h2 class="entry-title">
+                          Liputan Acara: Senam Sehat Bersama Karyawan
+                        </h2>
+                        <div class="entry-meta">
+                          <ul>
+                            <li class="d-inline-flex align-items-center me-3">
+                              <i class="bi bi-person-circle me-1"></i> Tim
+                              Nayaka
+                            </li>
+                            <li class="d-inline-flex align-items-center me-3">
+                              <i class="bi bi-clock me-1"></i>
+                              <time datetime="2025-07-08">08 Juli 2025</time>
+                            </li>
+                            <li class="d-inline-flex align-items-center">
+                              <i class="bi bi-camera-reels me-1"></i> Liputan
+                              Kegiatan
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="entry-content">
+                          <p>
+                            Saksikan keseruan acara senam sehat yang diadakan di
+                            salah satu perusahaan mitra kami. Kegiatan ini
+                            bertujuan untuk meningkatkan kebugaran dan semangat
+                            kerja para karyawan.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="blog-pagination">
+                  <ul>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="sidebar">
+                  <div class="sidebar-item card shadow-sm mb-4">
+                    <div class="card-body">
+                      <h3 class="sidebar-title">Cari Video</h3>
+                      <form action="" class="mt-3">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Ketik di sini..."
+                          />
+                          <button class="btn btn-primary" type="submit">
+                            <i class="bi bi-search"></i>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="sidebar-item card shadow-sm mb-4">
+                    <div class="card-body">
+                      <h3 class="sidebar-title">Kategori Video</h3>
+                      <div class="mt-3">
+                        <ul class="list-group list-group-flush">
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"
+                          >
+                            <a href="#">Edukasi Kesehatan</a> <span>(8)</span>
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"
+                          >
+                            <a href="#">Liputan Kegiatan</a> <span>(5)</span>
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"
+                          >
+                            <a href="#">Profil Layanan</a> <span>(3)</span>
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"
+                          >
+                            <a href="#">Tips Gaya Hidup</a> <span>(12)</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-item card shadow-sm mb-4">
+                    <div class="card-body">
+                      <h3 class="sidebar-title">Video Terbaru</h3>
+                      <div class="mt-3">
+                        <div class="post-item mt-3 d-flex align-items-center">
+                          <img
+                            src="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg"
+                            alt="Thumbnail video 1"
+                            class="img-fluid flex-shrink-0"
+                            style="
+                              width: 80px;
+                              height: 60px;
+                              object-fit: cover;
+                              border-radius: 5px;
+                            "
+                          />
+                          <div class="ms-3">
+                            <h4><a href="#">Pentingnya Vaksinasi</a></h4>
+                            <time datetime="2025-07-14">14 Juli 2025</time>
+                          </div>
+                        </div>
+                        <div class="post-item mt-3 d-flex align-items-center">
+                          <img
+                            src="https://img.youtube.com/vi/3hAmA31pZDA/default.jpg"
+                            alt="Thumbnail video 2"
+                            class="img-fluid flex-shrink-0"
+                            style="
+                              width: 80px;
+                              height: 60px;
+                              object-fit: cover;
+                              border-radius: 5px;
+                            "
+                          />
+                          <div class="ms-3">
+                            <h4><a href="#">Liputan Senam Sehat</a></h4>
+                            <time datetime="2025-07-08">08 Juli 2025</time>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-item card shadow-sm">
+                    <div class="card-body">
+                      <h3 class="sidebar-title">Tags</h3>
+                      <div class="mt-3">
+                        <a href="#" class="btn btn-outline-secondary btn-sm m-1"
+                          >Klinik</a
+                        >
+                        <a href="#" class="btn btn-outline-secondary btn-sm m-1"
+                          >MCU</a
+                        >
+                        <a href="#" class="btn btn-outline-secondary btn-sm m-1"
+                          >Perusahaan</a
+                        >
+                        <a href="#" class="btn btn-outline-secondary btn-sm m-1"
+                          >Provider</a
+                        >
+                        <a href="#" class="btn btn-outline-secondary btn-sm m-1"
+                          >Tips</a
+                        >
+                        <a href="#" class="btn btn-outline-secondary btn-sm m-1"
+                          >Sehat</a
+                        >
+                        <a href="#" class="btn btn-outline-secondary btn-sm m-1"
+                          >BPJS</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="shortcut">
+          <a
+            href="https://new.nayakaerahusada.com/layanan/provider"
+            class="link-shortcut network"
+          >
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Jaringan Kami</span>
+          </a>
+          <a
+            href="https://new.nayakaerahusada.com/kontak"
+            class="link-shortcut contact"
+          >
+            <i class="bi bi-telephone-fill"></i>
+            <span>Kontak Nayaka</span>
+          </a>
+          <a href="index.html#faqu" class="link-shortcut faq">
+            <i class="bi bi-question-circle-fill"></i>
+            <span>FAQ</span>
+          </a>
+        </div>
+      </main>
+      <footer class="footer pt-5 pb-5">
+        <div class="container">
+          <div class="row justify-content-between mb-5 g-xl-5">
+            <div class="col-md-4 mb-5 mb-lg-0">
+              <div class="">
+                <img
+                  class=""
+                  src="assets/footer_putih.png"
+                  width="230"
+                  alt="Logo Nayaka Era Husada Footer"
+                />
+              </div>
+              <p class="mb-4 mt-3" style="text-align: justify">
+                <b>PT. Nayaka Era Husada</b> adalah anak perusahaan dari DPK
+                BPJS Ketenagakerjaan yang bergerak di bidang Pelayanan
+                Kesehatan, Clinic, TPA/ASO, Managed Care dan MCU yang melayani
+                peserta Program JPK dan Masyarakat Umum.
+              </p>
+            </div>
+            <div class="col-md-7">
+              <div class="row g-2">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                  <h3 class="mb-3">Tautan Cepat</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html#home">Utama</a></li>
+                    <li>
+                      <a href="https://new.nayakaerahusada.com/kontak">F.A.Q</a>
+                    </li>
+                    <li>
+                      <a href="https://new.nayakaerahusada.com/kontak"
+                        >Kontak Kami</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-5 col-lg-4 mb-4 mb-lg-0">
+                  <h3 class="mb-3">Layanan Kami</h3>
+                  <ul>
+                    <li>
+                      <a href="https://nayakaerahusada.com/layanan/klinik"
+                        >Klinik Nayaka</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://nayakaerahusada.com/layanan/provider"
+                        >Provider Nayaka</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://nayakaerahusada.com/layanan/inhouse"
+                        >Klinik Kerjasama Perusahaan</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://nayakaerahusada.com/layanan/inhouse"
+                        >Download Formulir</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-7 col-lg-4 mb-4 mb-lg-0 quick-contact">
+                  <h3 class="mb-3">Kontak</h3>
+                  <p class="d-flex mb-3">
+                    <i class="bi bi-geo-alt-fill me-3" style="color: white"></i
+                    ><span
+                      >Gedung DPK BPJS Ketenagakerjaan. Jl. Tangkas Baru No.1,
+                      <br />
+                      Selatan 12920</span
+                    >
+                  </p>
+                  <a class="d-flex mb-3" href="mailto:pusat@nayakaerahusada.com"
+                    ><i
+                      class="bi bi-envelope-fill me-3"
+                      style="color: white"
+                    ></i
+                    ><span>pusat@nayakaerahusada.com</span></a
+                  ><a class="d-flex mb-3" href="tel://+62215260518"
+                    ><i
+                      class="bi bi-telephone-fill me-3"
+                      style="color: white"
+                    ></i
+                    ><span>+62 215-260-518</span></a
+                  >
+                  <p class="d-flex mb-3">
+                    <i class="bi bi-clock me-3" style="color: white"></i
+                    ><span>Mon-Fri: 08.00 am - 05.00 pm</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center credits pt-3" style="color: white">
+            <div
+              class="row align-items-center credits pt-3"
+              style="color: white"
+            >
+              <div
+                class="col-12 col-xl-8 text-center text-xl-start mb-3 mb-xl-0"
+              >
+                &copy; 2025 PT. Nayaka Era Husada
+              </div>
+              <div class="col-12 col-xl-4 text-center text-xl-end">
+                <img
+                  src="https://new.nayakaerahusada.com/assets/images/ukas.png"
+                  alt="UKAS"
+                  class="img-fluid"
+                  style="max-height: 100px; filter: brightness(0) invert(1)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      // Inisialisasi GLightbox untuk membuka video di popup
+      const lightbox = GLightbox({
+        selector: ".glightbox",
+      });
+    </script>
+  </body>
+</html>
